@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing components no fooditems snapshot 1`] = `
+<div
+  className="App"
+>
+  <h1>
+     Food Blog
+  </h1>
+  <hr />
+  <p>
+    No food recipies available!
+  </p>
+</div>
+`;
+
+exports[`testing components with food items snapshot 1`] = `
+<div
+  className="App"
+>
+  <h1>
+     Food Blog
+  </h1>
+  <hr />
+  <p>
+    No food recipies available!
+  </p>
+</div>
+`;

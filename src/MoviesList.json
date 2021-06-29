@@ -1,0 +1,28 @@
+{
+    "movies": [
+      {
+        "id": 1,
+        "name": "Sivaji",
+        "releasedt": "09/08/2021",
+        "duration": "120 mins",
+        "rating": "4.5",
+        "url": "https://upload.wikimedia.org/wikipedia/en/c/ce/Sivaji_The_Boss.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Kathi",
+        "releasedt": "21/07/2021",
+        "duration": "118 mins",
+        "rating": "4.7",
+        "url": "https://upload.wikimedia.org/wikipedia/en/9/90/Kaththi_poster.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Viswasam",
+        "releasedt": "21/07/2022",
+        "duration": "122 mins",
+        "rating": "4.9",
+        "url": "https://upload.wikimedia.org/wikipedia/en/0/0e/Viswasam_poster.jpg"
+      }
+    ]
+  }
