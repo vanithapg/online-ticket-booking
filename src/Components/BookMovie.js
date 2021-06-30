@@ -8,25 +8,25 @@ import QRCode from "react-qr-code";
 // import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 export default function BookMovie() {
-  let { id } = useParams();
+  let { _id } = useParams();
 
   const movies = useSelector((state) => state.movies.movies);
 
-  const [movieId, setMovieId] = useState(id);
+  const [movieId, setMovieId] = useState(_id);
   const [selectedMovie, setSelectedMovie] = useState({});
   const [seats, setSeats] = useState(1);
   const [ticket, setTicket] = useState(false);
   const [show, setShow] = useState(false);
   const [time, onChange] = useState(new Date());
 
-  console.log("ID ", id);
+  console.log("ID ", _id);
 
   useEffect(() => {
     console.log(
-      movies.find((f) => f.id == movieId),
+      movies.find((f) => f._id == movieId),
       "selected movie"
     );
-    setSelectedMovie(movies.find((f) => f.id == movieId));
+    setSelectedMovie(movies.find((f) => f._id == movieId));
     console.log(selectedMovie, "selectedMovie");
   }, []);
 

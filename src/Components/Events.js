@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Image } from "react-bootstrap";
+import { Image, Button, Card, CardGroup, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { getEvents } from "../redux/actions/events";
 import { useDispatch, useSelector } from "react-redux";
@@ -22,7 +22,17 @@ export default function Events() {
       {error && !loading && <p>{error}</p>}
 
       <h1> Events</h1>
-      {events.length > 0 && events.map((ev) => <Image rounded src={ev.url} />)}
+      <CardGroup className="custom">
+        {events.length > 0 &&
+          events.map((event) => (
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={event.url} className="events" />
+              <Card.Body>
+                <Card.Title>{event.name}</Card.Title>
+              </Card.Body>
+            </Card>
+          ))}
+      </CardGroup>
     </>
   );
 }

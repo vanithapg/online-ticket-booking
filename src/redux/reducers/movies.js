@@ -27,7 +27,7 @@ export default function movies(state = initialState, action) {
       };
     case type.GET_MOVIEDETAILS_REQUESTED:
       return {
-        movies: state.movies.find((f) => f.id === action.value.id),
+        movies: state.movies.find((f) => f._id === action.value._id),
         loading: false,
         error: action.message,
       };
@@ -62,7 +62,7 @@ export default function movies(state = initialState, action) {
       };
     case type.GET_LATEST_MOVIEDETAILS_REQUESTED:
       return {
-        movies: state.movies.find((f) => f.id === action.value.id),
+        movies: state.movies.find((f) => f._id === action.value._id),
         loading: false,
         error: action.message,
       };
@@ -97,7 +97,7 @@ export default function movies(state = initialState, action) {
       };
     case type.GET_UPCOMING_MOVIEDETAILS_REQUESTED:
       return {
-        movies: state.movies.find((f) => f.id === action.value.id),
+        movies: state.movies.find((f) => f._id === action.value._id),
         loading: false,
         error: action.message,
       };

@@ -46,6 +46,10 @@
   width: 50%;
   height: 50%;
 }
+.events {
+  width: auto;
+  height: 70%;
+}
 
 .carousel {
   height: 500px;

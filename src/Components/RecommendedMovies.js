@@ -51,7 +51,7 @@ export default function RecommendedMovies() {
                 <Card.Body>
                   <Card.Title>{movie.name}</Card.Title>
                   <Button variant="warning">
-                    <Link to={`/bookmovie/${movie.id}`} key={movie.id}>
+                    <Link to={`/bookmovie/${movie._id}`} key={movie._id}>
                       Book
                     </Link>
                   </Button>

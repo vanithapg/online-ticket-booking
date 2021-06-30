@@ -32,11 +32,11 @@ function App() {
         <Navibar />
 
         <Route exact path="/" component={HomePage} />
-        <Route path="/moviedetails/:id" component={Movie}></Route>
+        <Route path="/moviedetails/:_id" component={Movie}></Route>
         <Route path="/latest" component={Latest}></Route>
         <Route path="/upcoming" component={Upcoming}></Route>
         <Route path="/events" component={Events}></Route>
-        <Route path="/bookmovie/:id" component={BookMovie}></Route>
+        <Route path="/bookmovie/:_id" component={BookMovie}></Route>
       </Router>
     </div>
   );

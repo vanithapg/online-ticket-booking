@@ -26,13 +26,13 @@ export default function Latest() {
         {movies.length > 0 &&
           movies.map((movie) => (
             <Card style={{ width: "18rem" }}>
-              <Link to={`/moviedetails/${movie.id}`} key={movie.id}>
+              <Link to={`/moviedetails/${movie._id}`} key={movie._id}>
                 <Card.Img variant="top" src={movie.url} className="custom" />
               </Link>
               <Card.Body>
                 <Card.Title>{movie.name}</Card.Title>
                 <Button variant="warning">
-                  <Link to={`/bookmovie/${movie.id}`} key={movie.id}>
+                  <Link to={`/bookmovie/${movie._id}`} key={movie._id}>
                     Book
                   </Link>
                 </Button>

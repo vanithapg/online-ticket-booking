@@ -1,7 +1,7 @@
 {
     "latest": [
       {
-          "id": "5ab12612f36d2879268f284a",
+          "_id": "5ab12612f36d2879268f284a",
           "name": "Black Panther",
           "language": "ENGLISH",
           "rating": 4.5,
@@ -9,7 +9,7 @@
           "url": "https://image.ibb.co/f0hhZc/bp.jpg"
       },
       {
-          "id": "5ab12666f36d2879268f2902",
+          "_id": "5ab12666f36d2879268f2902",
           "name": "Death Wish",
           "language": "ENGLISH",
           "type": "Action Crime Thriller",
@@ -17,7 +17,7 @@
           "url": "https://image.ibb.co/gC9PfH/dw.jpg"
       },
       {
-          "id": "5ab12678f36d2879268f291d",
+          "_id": "5ab12678f36d2879268f291d",
           "name": "Coco",
           "language": "ENGLISH",
           "type": "Adventure Animation Family",
@@ -25,7 +25,7 @@
           "url": "https://image.ibb.co/dQwWSx/coco.jpg"
       },
       {
-        "id": "5ab12678f36d2879268f291d",
+        "_id": "5ab12678f36d2879268f291d",
         "name": "Jolt",
         "language": "ENGLISH",
         "type": "Adventure Animation Family",
@@ -35,7 +35,7 @@
     ],
     "recommended": [
       {
-        "id": "5ab12612f36d2879268f284a",
+        "_id": "5ab12612f36d2879268f284a",
         "name": "Black Panther",
         "language": "ENGLISH",
         "rating": 4.5,
@@ -43,7 +43,7 @@
         "url": "https://image.ibb.co/f0hhZc/bp.jpg"
     },
     {
-        "id": "5ab12666f36d2879268f2902",
+        "_id": "5ab12666f36d2879268f2902",
         "name": "Death Wish",
         "language": "ENGLISH",
         "type": "Action Crime Thriller",
@@ -51,7 +51,7 @@
         "url": "https://image.ibb.co/gC9PfH/dw.jpg"
     },
     {
-        "id": "5ab12678f36d2879268f291d",
+        "_id": "5ab12678f36d2879268f291d",
         "name": "Coco",
         "language": "ENGLISH",
         "type": "Adventure Animation Family",
@@ -59,7 +59,7 @@
         "url": "https://image.ibb.co/dQwWSx/coco.jpg"
     },
     {
-      "id": "5ab12678f36d2879268f291d",
+      "_id": "5ab12678f36d2879268f291d",
       "name": "Jolt",
       "language": "ENGLISH",
       "type": "Adventure Animation Family",
@@ -69,38 +69,46 @@
     ],
     "events": [
       {
-          "id": "1",
+          "_id": "1",
           "name": "Jonah And The Whales",
           "language": "Tamil",
           "type": "Action Adventure Fantasy",
           "url": "https://photos.bandsintown.com/thumb/9054325.jpeg"
       },
       {
-          "id": "2",
-          "name": "Death Wish",
+          "_id": "2",
+          "name": "Music Event",
           "language": "ENGLISH",
           "type": "Action Crime Thriller",
           "rating": 3.2,
-          "url": "https://image.ibb.co/gC9PfH/dw.jpg"
-      }
+          "url": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/music-event-poster-template-design-0f7370db1a770f45d14e2410bcb5c211_screen.jpg?ts=1580188883"
+      },
+      {
+        "_id": "3",
+        "name": "Summer Fest",
+        "language": "ENGLISH",
+        "type": "Action Crime Thriller",
+        "rating": 3.2,
+        "url": "https://cdn.stayhappening.com/events4/banners/8015b9ac1085c1e32d4906674e2d2e742fb86ce7e0f2950acdf96ec6a763381d-rimg-w501-h540-gmir.jpg?v=1624816087"
+    }
     ],
     "upcoming": [
       {
-          "id": "1",
+          "_id": "1",
           "name": "Black Widow (2021)          ",
           "language": "ENGLISH",
           "type": "Action Adventure Fantasy",
           "url": "https://images-na.ssl-images-amazon.com/images/I/915Jm1ZhOvL._AC_UL232_SR232,232_.jpg"
       },
       {
-          "id": "2",
+          "_id": "2",
           "name": "Mario",
           "language": "ENGLISH",
           "type": "Action Crime Thriller",
           "url": "https://images-na.ssl-images-amazon.com/images/I/A1v34AZ--WL._AC_UL480_SR297,480_.jpg"
       },
       {
-          "id": "3",
+          "_id": "3",
           "name": "Voyagers",
           "language": "ENGLISH",
           "type": "Adventure Animation Family",

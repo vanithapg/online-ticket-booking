@@ -33,7 +33,7 @@ function* getMovie(action) {
           "Content-Type": "application/json",
         },
       },
-      `http://localhost:6800/recommended/${action.value.id}`
+      `http://localhost:6800/recommended/${action.value._id}`
     );
     yield put({ type: "GET_MOVIEDETAILS_SUCCESS", movies: movie });
   } catch (e) {

@@ -5,16 +5,16 @@ import { getMovie, getMovies } from "../redux/actions/movies";
 import { Button, Image } from "react-bootstrap";
 
 export default function Movie() {
-  let { id } = useParams();
+  let { _id } = useParams();
 
   const dispatch = useDispatch();
   const movies = useSelector((state) => state.movies.movies);
   const loading = useSelector((state) => state.movies.loading);
   const error = useSelector((state) => state.movies.error);
-  const [movieId, setMovieId] = useState(id);
+  const [movieId, setMovieId] = useState(_id);
   const [selectedMovie, setSelectedMovie] = useState({});
 
-  console.log("ID ", id);
+  console.log("ID ", _id);
 
   useEffect(() => {
     // dispatch(getMovie());
@@ -24,10 +24,10 @@ export default function Movie() {
     console.log("in Movie Detail Page", movies);
 
     console.log(
-      movies.find((f) => f.id == movieId),
+      movies.find((f) => f._id == movieId),
       "selected Movie"
     );
-    setSelectedMovie(movies.find((f) => f.id == movieId));
+    setSelectedMovie(movies.find((f) => f._id == movieId));
     console.log(selectedMovie, "selectedMovie");
   }, []);
 
