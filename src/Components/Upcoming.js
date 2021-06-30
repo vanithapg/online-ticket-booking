@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
-import Movie from "./Movie";
-import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { getUpcoming } from "../redux/actions/upcoming";
 import { useDispatch, useSelector } from "react-redux";
-import Carousel from "react-bootstrap/Carousel";
+import { Image, Button, Card, CardGroup, Carousel } from "react-bootstrap";
 
 export default function Latest() {
   const dispatch = useDispatch();
@@ -23,9 +21,25 @@ export default function Latest() {
       {movies.length === 0 && !loading && <p>No movie available!</p>}
       {error && !loading && <p>{error}</p>}
 
-      <h1> Latest Movies</h1>
-      {movies.length > 0 &&
-        movies.map((movie) => <Image rounded src={movie.url} />)}
+      <h1> Upcoming Movies</h1>
+      <CardGroup>
+        {movies.length > 0 &&
+          movies.map((movie) => (
+            <Card style={{ width: "18rem" }}>
+              <Link to={`/moviedetails/${movie.id}`} key={movie.id}>
+                <Card.Img variant="top" src={movie.url} className="custom" />
+              </Link>
+              <Card.Body>
+                <Card.Title>{movie.name}</Card.Title>
+                <Button variant="warning">
+                  <Link to={`/bookmovie/${movie.id}`} key={movie.id}>
+                    Book
+                  </Link>
+                </Button>
+              </Card.Body>
+            </Card>
+          ))}
+      </CardGroup>
     </>
   );
 }

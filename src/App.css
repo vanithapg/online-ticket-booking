@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.custom {
+  width: auto;
+  height: 400px;
+}
+
+.custom1 {
+  width: 50%;
+  height: 50%;
+}
+
+.carousel {
+  height: 500px;
+}

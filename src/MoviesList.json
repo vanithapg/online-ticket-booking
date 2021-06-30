@@ -23,30 +23,49 @@
           "type": "Adventure Animation Family",
           "rating": 5,
           "url": "https://image.ibb.co/dQwWSx/coco.jpg"
-      }
+      },
+      {
+        "id": "5ab12678f36d2879268f291d",
+        "name": "Jolt",
+        "language": "ENGLISH",
+        "type": "Adventure Animation Family",
+        "rating": 5,
+        "url": "https://i.ibb.co/vYnQ3PG/jolt-poster.jpg"
+    }
     ],
     "recommended": [
       {
-        "id": 1,
-        "name": "Sivaji",
-        "duration": "120 mins",
-        "rating": "4.5",
-        "url": "https://upload.wikimedia.org/wikipedia/en/c/ce/Sivaji_The_Boss.jpg"
-      },
-      {
-        "id": 2,
-        "name": "Kathi",
-        "duration": "118 mins",
-        "rating": "4.7",
-        "url": "https://upload.wikimedia.org/wikipedia/en/9/90/Kaththi_poster.jpg"
-      },
-      {
-        "id": 3,
-        "name": "Viswasam",
-        "duration": "122 mins",
-        "rating": "4.9",
-        "url": "https://upload.wikimedia.org/wikipedia/en/0/0e/Viswasam_poster.jpg"
-      }
+        "id": "5ab12612f36d2879268f284a",
+        "name": "Black Panther",
+        "language": "ENGLISH",
+        "rating": 4.5,
+        "type": "Action Adventure Fantasy",
+        "url": "https://image.ibb.co/f0hhZc/bp.jpg"
+    },
+    {
+        "id": "5ab12666f36d2879268f2902",
+        "name": "Death Wish",
+        "language": "ENGLISH",
+        "type": "Action Crime Thriller",
+        "rating": 3.2,
+        "url": "https://image.ibb.co/gC9PfH/dw.jpg"
+    },
+    {
+        "id": "5ab12678f36d2879268f291d",
+        "name": "Coco",
+        "language": "ENGLISH",
+        "type": "Adventure Animation Family",
+        "rating": 5,
+        "url": "https://image.ibb.co/dQwWSx/coco.jpg"
+    },
+    {
+      "id": "5ab12678f36d2879268f291d",
+      "name": "Jolt",
+      "language": "ENGLISH",
+      "type": "Adventure Animation Family",
+      "rating": 5,
+      "url": "https://i.ibb.co/vYnQ3PG/jolt-poster.jpg"
+  }
     ],
     "events": [
       {

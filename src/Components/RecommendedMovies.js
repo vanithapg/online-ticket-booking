@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import Movie from "./Movie";
-import { Image } from "react-bootstrap";
+import { Image, Button, Card, CardGroup, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { getMovies } from "../redux/actions/movies";
 import { useDispatch, useSelector } from "react-redux";
-import Carousel from "react-bootstrap/Carousel";
 
 export default function RecommendedMovies() {
   const dispatch = useDispatch();
@@ -26,11 +25,12 @@ export default function RecommendedMovies() {
         <Carousel>
           {movies.length > 0 &&
             movies.map((movie) => (
-              <Carousel.Item interval={100}>
+              <Carousel.Item interval={500}>
                 <img
-                  className="d-block w-50"
+                  className="d-block w-40"
                   src={movie.url}
                   alt={movie.name}
+                  className="carousel"
                 />
                 <Carousel.Caption>
                   <h3>{movie.name}</h3>
@@ -39,14 +39,27 @@ export default function RecommendedMovies() {
             ))}
         </Carousel>
       </center>
+      <br></br>
+      <h3> Recommended Movies</h3>
 
-      <h1> Recommended Movies</h1>
-      {movies.length > 0 &&
-        movies.map((movie) => (
-          <Link to={`/moviedetails/${movie.id}`} key={movie.id}>
-            <Image rounded src={movie.url} />
-          </Link>
-        ))}
+      <center>
+        <CardGroup className="custom1">
+          {movies.length > 0 &&
+            movies.map((movie) => (
+              <Card style={{ width: "10rem" }}>
+                <Card.Img variant="top" src={movie.url} />
+                <Card.Body>
+                  <Card.Title>{movie.name}</Card.Title>
+                  <Button variant="warning">
+                    <Link to={`/bookmovie/${movie.id}`} key={movie.id}>
+                      Book
+                    </Link>
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))}
+        </CardGroup>
+      </center>
     </>
   );
 }

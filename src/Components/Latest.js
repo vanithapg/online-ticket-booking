@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Movie from "./Movie";
-import { Image } from "react-bootstrap";
+import { Image, Button, Card, CardGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { getLatestMovies } from "../redux/actions/movies";
 import { useDispatch, useSelector } from "react-redux";
@@ -24,12 +24,25 @@ export default function Latest() {
       {error && !loading && <p>{error}</p>}
 
       <h1> Latest Movies</h1>
-      {movies.length > 0 &&
-        movies.map((movie) => (
-          <Link to={`/moviedetails/${movie.id}`} key={movie.id}>
-            <Image rounded src={movie.url} />
-          </Link>
-        ))}
+
+      <CardGroup>
+        {movies.length > 0 &&
+          movies.map((movie) => (
+            <Card style={{ width: "18rem" }}>
+              <Link to={`/moviedetails/${movie.id}`} key={movie.id}>
+                <Card.Img variant="top" src={movie.url} className="custom" />
+              </Link>
+              <Card.Body>
+                <Card.Title>{movie.name}</Card.Title>
+                <Button variant="warning">
+                  <Link to={`/bookmovie/${movie.id}`} key={movie.id}>
+                    Book
+                  </Link>
+                </Button>
+              </Card.Body>
+            </Card>
+          ))}
+      </CardGroup>
     </>
   );
 }

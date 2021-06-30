@@ -6,7 +6,7 @@ import "./App.css";
 // import Recipe from "./Recipe";
 import Movie from "./Components/Movie";
 import HomePage from "./Components/HomePage";
-import Navbar from "./Components/Navbar";
+import Navibar from "./Components/Navbar";
 import BookMovie from "./Components/BookMovie";
 import Latest from "./Components/Latest";
 import Upcoming from "./Components/Upcoming";
@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navibar />
 
         <Route exact path="/" component={HomePage} />
         <Route path="/moviedetails/:id" component={Movie}></Route>
