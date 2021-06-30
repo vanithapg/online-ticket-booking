@@ -39,9 +39,8 @@ export default function Movie() {
   return (
     <div>
       <h1>Movie Name: {name}</h1>
-      <h3>Release Date: {releasedt}</h3>
+      {releasedt ? <h3>Release Date: {releasedt}</h3> : " "}
       <h3>Rating: {rating}</h3>
-      <h4>Duration: {duration}</h4>
       <Image rounded src={url} />
       <Button variant="warning">
         <Link to={`/bookmovie/${movieId}`}> Book now</Link>

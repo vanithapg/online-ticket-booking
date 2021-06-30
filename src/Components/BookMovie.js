@@ -87,7 +87,7 @@ export default function BookMovie() {
               </Toast.Header>
               <Toast.Body>Ticket Booked</Toast.Body>
             </Toast>
-            <QRCode value={JSON.stringify(name, time, seats)} />
+            <QRCode value={JSON.stringify(name + time + seats)} />
           </>
         ) : (
           ""

@@ -8,6 +8,10 @@ import Movie from "./Components/Movie";
 import HomePage from "./Components/HomePage";
 import Navbar from "./Components/Navbar";
 import BookMovie from "./Components/BookMovie";
+import Latest from "./Components/Latest";
+import Upcoming from "./Components/Upcoming";
+import Events from "./Components/Events";
+
 function App() {
   // const [foodItems, setFoodItems ] = useState([]);
 
@@ -24,10 +28,14 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
       <Router>
+        <Navbar />
+
         <Route exact path="/" component={HomePage} />
         <Route path="/moviedetails/:id" component={Movie}></Route>
+        <Route path="/latest" component={Latest}></Route>
+        <Route path="/upcoming" component={Upcoming}></Route>
+        <Route path="/events" component={Events}></Route>
         <Route path="/bookmovie/:id" component={BookMovie}></Route>
       </Router>
     </div>

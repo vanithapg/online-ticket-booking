@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from "redux-saga/effects";
 
-const apiUrl = `http://localhost:6800/movies`;
+const apiUrl = `http://localhost:6800/recommended`;
 function getApi() {
   return fetch(apiUrl, {
     method: "GET",
@@ -33,7 +33,7 @@ function* getMovie(action) {
           "Content-Type": "application/json",
         },
       },
-      `http://localhost:6800/movies/${action.value.id}`
+      `http://localhost:6800/recommended/${action.value.id}`
     );
     yield put({ type: "GET_MOVIEDETAILS_SUCCESS", movies: movie });
   } catch (e) {

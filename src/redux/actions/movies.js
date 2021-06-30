@@ -13,3 +13,15 @@ export function getMovie() {
     type: type.GET_MOVIEDETAILS_REQUESTED,
   };
 }
+
+export function getLatestMovies() {
+  return {
+    type: type.GET_LATEST_MOVIES_REQUESTED,
+  };
+}
+
+export function getLatestMovie() {
+  return {
+    type: type.GET_LATEST_MOVIEDETAILS_REQUESTED,
+  };
+}

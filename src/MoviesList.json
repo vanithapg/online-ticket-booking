@@ -1,9 +1,34 @@
 {
-    "movies": [
+    "latest": [
+      {
+          "id": "5ab12612f36d2879268f284a",
+          "name": "Black Panther",
+          "language": "ENGLISH",
+          "rating": 4.5,
+          "type": "Action Adventure Fantasy",
+          "url": "https://image.ibb.co/f0hhZc/bp.jpg"
+      },
+      {
+          "id": "5ab12666f36d2879268f2902",
+          "name": "Death Wish",
+          "language": "ENGLISH",
+          "type": "Action Crime Thriller",
+          "rating": 3.2,
+          "url": "https://image.ibb.co/gC9PfH/dw.jpg"
+      },
+      {
+          "id": "5ab12678f36d2879268f291d",
+          "name": "Coco",
+          "language": "ENGLISH",
+          "type": "Adventure Animation Family",
+          "rating": 5,
+          "url": "https://image.ibb.co/dQwWSx/coco.jpg"
+      }
+    ],
+    "recommended": [
       {
         "id": 1,
         "name": "Sivaji",
-        "releasedt": "09/08/2021",
         "duration": "120 mins",
         "rating": "4.5",
         "url": "https://upload.wikimedia.org/wikipedia/en/c/ce/Sivaji_The_Boss.jpg"
@@ -11,7 +36,6 @@
       {
         "id": 2,
         "name": "Kathi",
-        "releasedt": "21/07/2021",
         "duration": "118 mins",
         "rating": "4.7",
         "url": "https://upload.wikimedia.org/wikipedia/en/9/90/Kaththi_poster.jpg"
@@ -19,10 +43,49 @@
       {
         "id": 3,
         "name": "Viswasam",
-        "releasedt": "21/07/2022",
         "duration": "122 mins",
         "rating": "4.9",
         "url": "https://upload.wikimedia.org/wikipedia/en/0/0e/Viswasam_poster.jpg"
+      }
+    ],
+    "events": [
+      {
+          "id": "1",
+          "name": "Jonah And The Whales",
+          "language": "Tamil",
+          "type": "Action Adventure Fantasy",
+          "url": "https://photos.bandsintown.com/thumb/9054325.jpeg"
+      },
+      {
+          "id": "2",
+          "name": "Death Wish",
+          "language": "ENGLISH",
+          "type": "Action Crime Thriller",
+          "rating": 3.2,
+          "url": "https://image.ibb.co/gC9PfH/dw.jpg"
+      }
+    ],
+    "upcoming": [
+      {
+          "id": "1",
+          "name": "Black Widow (2021)          ",
+          "language": "ENGLISH",
+          "type": "Action Adventure Fantasy",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/915Jm1ZhOvL._AC_UL232_SR232,232_.jpg"
+      },
+      {
+          "id": "2",
+          "name": "Mario",
+          "language": "ENGLISH",
+          "type": "Action Crime Thriller",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/A1v34AZ--WL._AC_UL480_SR297,480_.jpg"
+      },
+      {
+          "id": "3",
+          "name": "Voyagers",
+          "language": "ENGLISH",
+          "type": "Adventure Animation Family",
+          "url": "https://m.media-amazon.com/images/I/918h5AoWpRS._AC_UY436_FMwebp_QL65_.jpg"
       }
     ]
   }
