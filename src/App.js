@@ -1,5 +1,5 @@
-import { Link, Route, BrowserRouter as Router } from "react-router-dom";
-import React, { useState } from "react";
+import { Route, BrowserRouter as Router } from "react-router-dom";
+import React from "react";
 
 import "./App.css";
 // import FoodItems from "./FoodItems";

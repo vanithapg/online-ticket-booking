@@ -27,10 +27,14 @@ export default function Latest() {
 
       <CardGroup>
         {movies.length > 0 &&
-          movies.map((movie) => (
-            <Card style={{ width: "18rem" }}>
+          movies.map((movie, i) => (
+            <Card style={{ width: "10rem" }} key={i}>
               <Link to={`/moviedetails/${movie._id}`} key={movie._id}>
-                <Card.Img variant="top" src={movie.url} className="custom" />
+                <Card.Img
+                  variant="top"
+                  src={movie.imageUrl}
+                  className="custom"
+                />
               </Link>
               <Card.Body>
                 <Card.Title>{movie.name}</Card.Title>

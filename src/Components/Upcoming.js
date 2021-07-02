@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getUpcoming } from "../redux/actions/upcoming";
 import { useDispatch, useSelector } from "react-redux";
-import { Image, Button, Card, CardGroup, Carousel } from "react-bootstrap";
+import { Button, Card, CardGroup } from "react-bootstrap";
 
 export default function Latest() {
   const dispatch = useDispatch();
@@ -24,10 +24,14 @@ export default function Latest() {
       <h1> Upcoming Movies</h1>
       <CardGroup>
         {movies.length > 0 &&
-          movies.map((movie) => (
-            <Card style={{ width: "18rem" }}>
+          movies.map((movie, i) => (
+            <Card style={{ width: "10rem" }} key={i}>
               <Link to={`/moviedetails/${movie._id}`} key={movie._id}>
-                <Card.Img variant="top" src={movie.url} className="custom" />
+                <Card.Img
+                  variant="top"
+                  src={movie.imageUrl}
+                  className="custom"
+                />
               </Link>
               <Card.Body>
                 <Card.Title>{movie.name}</Card.Title>

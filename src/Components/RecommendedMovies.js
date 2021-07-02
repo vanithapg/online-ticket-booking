@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import Movie from "./Movie";
-import { Image, Button, Card, CardGroup, Carousel } from "react-bootstrap";
+import { Button, Card, CardGroup, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { getMovies } from "../redux/actions/movies";
 import { useDispatch, useSelector } from "react-redux";
@@ -24,11 +23,11 @@ export default function RecommendedMovies() {
       <center>
         <Carousel>
           {movies.length > 0 &&
-            movies.map((movie) => (
-              <Carousel.Item interval={500}>
+            movies.map((movie, i) => (
+              <Carousel.Item interval={500} key={i}>
                 <img
                   className="d-block w-40"
-                  src={movie.url}
+                  src={movie.imageUrl}
                   alt={movie.name}
                   className="carousel"
                 />
@@ -45,9 +44,9 @@ export default function RecommendedMovies() {
       <center>
         <CardGroup className="custom1">
           {movies.length > 0 &&
-            movies.map((movie) => (
-              <Card style={{ width: "10rem" }}>
-                <Card.Img variant="top" src={movie.url} />
+            movies.map((movie, i) => (
+              <Card style={{ width: "10rem" }} key={i}>
+                <Card.Img variant="top" src={movie.imageUrl} />
                 <Card.Body>
                   <Card.Title>{movie.name}</Card.Title>
                   <Button variant="warning">

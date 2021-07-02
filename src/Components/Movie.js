@@ -28,20 +28,20 @@ export default function Movie() {
       "selected Movie"
     );
     setSelectedMovie(movies.find((f) => f._id == movieId));
-    console.log(selectedMovie, "selectedMovie");
+    // console.log(selectedMovie, "selectedMovie");
   }, []);
 
-  const { name, releasedt, rating, duration, url } = selectedMovie
+  const { name, rate, duration, imageUrl } = selectedMovie
     ? selectedMovie
     : { name: "Sivaji", rating: "4.5" };
-  console.log(name, releasedt);
+  // console.log(name, releasedt);
 
   return (
     <div>
       <h1>Movie Name: {name}</h1>
-      {releasedt ? <h3>Release Date: {releasedt}</h3> : " "}
-      <h3>Rating: {rating}</h3>
-      <Image rounded src={url} />
+      {/* {releasedt ? <h3>Release Date: {releasedt}</h3> : " "} */}
+      <h3>Rating: {rate}</h3>
+      <Image rounded src={imageUrl} />
       <Button variant="warning">
         <Link to={`/bookmovie/${movieId}`}> Book now</Link>
       </Button>

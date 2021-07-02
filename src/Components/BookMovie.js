@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
-import { Button, Card, Toast } from "react-bootstrap";
+import { useParams } from "react-router-dom";
+import { Card, Toast } from "react-bootstrap";
 import DatePicker from "react-date-picker";
 import QRCode from "react-qr-code";
 
@@ -30,7 +30,7 @@ export default function BookMovie() {
     console.log(selectedMovie, "selectedMovie");
   }, []);
 
-  const { name, url, rating } = selectedMovie ? selectedMovie : undefined;
+  const { name, imageUrl, rating } = selectedMovie ? selectedMovie : undefined;
   console.log(name, rating);
 
   function generateQR() {
@@ -43,7 +43,7 @@ export default function BookMovie() {
     <div>
       <center>
         <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={url} />
+          <Card.Img variant="top" src={imageUrl} />
           <Card.Body>
             <Card.Title>{name}</Card.Title>
             <Card.Text></Card.Text>

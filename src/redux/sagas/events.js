@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from "redux-saga/effects";
 
-const apiUrl = `http://localhost:6800/events`;
+const apiUrl = `http://3.17.216.66:4000/events`;
 function getApi() {
   return fetch(apiUrl, {
     method: "GET",
